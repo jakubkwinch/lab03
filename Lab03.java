@@ -13,6 +13,7 @@ public class Lab03 {
     if (integer1  < 0 || integer1 > 99) {
         System.out.print("Outside range. Please enter an integer between 0-99: ");
     }   else {
+        //Asks for integer #2 
         System.out.print("Please enter an integer between 0-99: ");
         
     }
@@ -21,14 +22,7 @@ public class Lab03 {
     
     if (integer2  < 0 || integer2 > 99) {
         System.out.print("Outside range. Closing program");
+        return;
     }
     
     
-   
-   
-    
-    }
-     
-  }
-    
-  
