@@ -1,3 +1,12 @@
+/** ****************************************************************************
+ * Program Name:          Lab03
+ * Program Description:   Sorting three odd/even integers using logical operators only.
+ * Program Author:        Jakub K. Winch
+ * Date Created:          02/25/2019
+ *
+ * Change#        Change Date      Programmer Name        Description
+ * -------        ------------     -------------------    ---------------------
+ ***************************************************************************** */
 package lab03;
 
 import java.util.Scanner;
