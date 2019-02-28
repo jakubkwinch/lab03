@@ -19,7 +19,7 @@ public class Lab03 {
 
     //Declerations
     int input1;
-    int input2 = 0;
+    int input2;
     int max;
     int min;
     int integer1;
@@ -32,34 +32,33 @@ public class Lab03 {
     int quotient1;
     int quotient2;
 
-    //Ask for integer #1 & 2 
+    //Input #1
     System.out.print("Please enter an integer between 0-99: ");
     input1 = input.nextInt();
-    
+
     if (input1 < 0 || input1 > 99) {
       System.out.print("Outside range. Please enter an integer between 0-99: ");
       input1 = input.nextInt();
       if (input1 < 0 || input1 > 99) {
         System.out.print("Outside range. Program ending.");
         return;
-
-      }
-    } else {
-      System.out.print("Next, enter another integer between 0-99: ");
-      input2 = input.nextInt();
-
-      if (input2 < 0 || input2 > 99) {
-        System.out.print("Outside range. Please enter an integer between 0-99: ");
-        input2 = input.nextInt();
-        if (input2 < 0 || input2 > 99) {
-          System.out.print("Outside range. Program ending.");
-          return;
-          
-          
-        }
       }
     }
 
+    //Input #2
+    System.out.print("Next, enter another integer between 0-99: ");
+    input2 = input.nextInt();
+
+    if (input2 < 0 || input2 > 99) {
+      System.out.print("Outside range. Please enter an integer between 0-99: ");
+      input2 = input.nextInt();
+      if (input2 < 0 || input2 > 99) {
+        System.out.print("Outside range. Program ending.");
+        return;
+      }
+    }
+
+    //Min / Max
     if (input1 < input2) {
       min = input1;
       max = input2;
@@ -68,6 +67,7 @@ public class Lab03 {
       max = input1;
     }
 
+    //Integer creation
     integer1 = min + (int) (Math.random() * (max - min) + 1);
     integer2 = min + (int) (Math.random() * (max - min) + 1);
     integer3 = min + (int) (Math.random() * (max - min) + 1);
@@ -91,29 +91,29 @@ public class Lab03 {
     System.out.println("Three sorted random integers between " + min + " and " + max + " are " + integer1 + ", " + integer2 + ", & " + integer3);
 
     if (integer1 % 2 == 0) {
-      System.out.println("Integer1 is even");
+      System.out.println(integer1 + " is even");
     } else {
-      System.out.println("Integer1 is odd.");
+      System.out.println(integer1 + " is odd.");
     }
 
     if (integer2 % 2 == 0) {
-      System.out.println("Integer2 is even");
+      System.out.println(integer2 + " is even");
     } else {
-      System.out.println("Integer2 is odd");
+      System.out.println(integer2 + " is odd");
     }
 
     if (integer3 % 2 == 0) {
-      System.out.println("Integer3 is even");
+      System.out.println(integer3 + " is even");
     } else {
-      System.out.println("Integer3 is odd");
+      System.out.println(integer3 + " is odd");
     }
-    
+
     //SUM
     sum = integer1 + integer2 + integer3;
-    
+
     //PRODUCT
     product = integer1 * integer2 * integer3;
-    
+
     //QUOTIENT
     quotient1 = integer1 / integer2;
     quotient2 = quotient1 / integer3;
@@ -122,7 +122,6 @@ public class Lab03 {
     System.out.println("The sum of all the integers is " + sum);
     System.out.println("The product of all the integers is " + product);
     System.out.println("The quotient of all the integers is " + quotient);
-
   }
 
 }
